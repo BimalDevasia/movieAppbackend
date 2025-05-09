@@ -3,7 +3,7 @@ const router = express.Router();
 const connectDB = require('../lib/db');
 const Favourite = require('../models/favourite');
 router.post('/', async ( req, res ) => {
-   
+    
     const { Poster, Title, Type, Year, imdbID } = req.body
     try{
         await connectDB();
